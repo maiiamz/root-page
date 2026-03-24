@@ -1,3 +1,3 @@
 # LinkTree
 Check out my socials and contact!
-![MAIA](img/HERO.jpeg)
+![MAIA](img/HERO.png)
