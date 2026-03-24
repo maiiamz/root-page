@@ -57,8 +57,8 @@ a {
     border: 2px solid var(--accent-color);
     background-color: var(--accent-color);
     color: var(--background-color);
-    width: clamp(160px, 20vw, 250px);
-    font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+    width: clamp(145px, 20vw, 250px);
+    font-size: clamp(0.7rem, 1.5vw, 1.5rem);
     transition: all 0.5s ease-in-out;
     text-decoration: none;
     white-space: nowrap;
