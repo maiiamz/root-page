@@ -28,6 +28,8 @@ h1 {
     line-height: 1;
     margin: 0 clamp(5px, 2vw, 30px);
     word-spacing: 0;
+    clip-path: inset(0 100% 0 0);
+    animation: type 1s ease-in forwards;
 }
 
 p {
@@ -96,6 +98,28 @@ a:hover {
     width: clamp(20%, 28vw, 35%);
     height: clamp(20%, 28vh, 35%);
     object-fit: cover;
+}
+
+.galeria img {
+    will-change: transform;
+    transition: transform 0.1s ease-out;
+}
+
+@keyframes type {
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.galeria img {
+    will-change: transform;
+    transition: transform 0.1s ease-out;
+}
+
+@keyframes type {
+    to {
+        clip-path: inset(0 0 0 0);
+    }
 }
 
 .blue {
