@@ -29,7 +29,7 @@ h1 {
     margin: 0 clamp(5px, 2vw, 30px);
     word-spacing: 0;
     clip-path: inset(0 100% 0 0);
-    animation: type 1s ease-in forwards;
+    animation: type .5s ease-in forwards;
 }
 
 p {
@@ -37,6 +37,7 @@ p {
     margin: 0 clamp(10px, 5vw, 60px);
     margin-bottom: clamp(10px, 3vw, 30px);
 }
+
 
 h2 {
     font-size: clamp(1rem, 2vw, 2rem);
@@ -105,15 +106,16 @@ a:hover {
     transition: transform 0.1s ease-out;
 }
 
-@keyframes type {
-    to {
-        clip-path: inset(0 0 0 0);
-    }
-}
-
-.galeria img {
-    will-change: transform;
-    transition: transform 0.1s ease-out;
+.mouse-dust {
+    position: fixed;
+    pointer-events: none;
+    border-radius: 50%;
+    background: rgba(255, 45, 45, 1);
+    box-shadow: 0 0 12px rgba(255, 80, 80, 0.7);
+    filter: blur(0.4px);
+    transform: translate(-50%, -50%);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    z-index: 9999;
 }
 
 @keyframes type {
