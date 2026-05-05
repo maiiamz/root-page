@@ -36,8 +36,12 @@ p {
     font-size: clamp(.8rem, 3vw, 3rem);
     margin: 0 clamp(10px, 5vw, 60px);
     margin-bottom: clamp(10px, 3vw, 30px);
+    max-width: clamp(22rem, 45vw, 36rem);
 }
 
+h1 + p + p {
+    font-size: clamp(.7rem, 2vw, 1.5rem);
+}
 
 h2 {
     font-size: clamp(1rem, 2vw, 2rem);
@@ -95,7 +99,7 @@ a:hover {
 .grey {
     position: fixed;
     top: 70%;
-    right: 40%;
+    right: 32%;
     width: clamp(20%, 28vw, 35%);
     height: clamp(20%, 28vh, 35%);
     object-fit: cover;
